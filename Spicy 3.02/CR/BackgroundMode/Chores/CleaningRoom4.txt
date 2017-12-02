@@ -201,13 +201,13 @@
 @NullResponse @CheckFlag(Room4VacuumFloorTemp)
 @NullResponse @CheckFlag(Room4WipeTemp) @Goto(Room4VacuumFloorTemp)
 (Room4VacuumFloorTemp)
-@NullResponse @ChangeVar[ChoreComplete]=[ChoreComplete]+[1] @SetDate(Room4Vacuum, 0 days)
+@NullResponse @ChangeVar[ChoresComplete]=[ChoresComplete]+[1] @SetDate(Room4Vacuum, 0 days)
 @End
 (Room4WashFloorTemp)
-@NullResponse @ChangeVar[ChoreComplete]=[ChoreComplete]+[1] @SetDate(Room4Vacuum, 0 days)
+@NullResponse @ChangeVar[ChoresComplete]=[ChoresComplete]+[1] @SetDate(Room4Vacuum, 0 days)
 @NullResponse @SetDate(Room4Wash, 0 days)
 @End
 (Room4WipeTemp)
-@NullResponse @ChangeVar[ChoreComplete]=[ChoreComplete]+[1] @SetDate(Room4Vacuum, 0 days)
+@NullResponse @ChangeVar[ChoresComplete]=[ChoresComplete]+[1] @SetDate(Room4Vacuum, 0 days)
 @NullResponse @SetDate(Room4Wipe, 0 days)
 @End
